@@ -1,0 +1,24 @@
+#ifndef ${upper_project_name}_${upper_class_name}_H
+#define ${upper_project_name}_${upper_class_name}_H
+
+#include <gen/${lower_class_name}.gen.h>
+#include <Godot.hpp>
+#include <${parent_name}.hpp>
+
+namespace godot
+{
+    CLASS_${upper_class_name}_START
+    public:
+        ${class_name}();
+        virtual ~${class_name}();
+
+        static void _register_methods();
+
+        void _ready();
+        void _process();
+
+
+    CLASS_${upper_class_name}_END
+}
+
+#endif //${upper_project_name}_${upper_class_name}_H

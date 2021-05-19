@@ -1,0 +1,33 @@
+#include <${lower_class_name}.h>
+
+namespace godot
+{
+    ${class_name}::${class_name}() 
+    {
+    }
+
+    ${class_name}::~${class_name}() 
+    {
+    }
+
+    void ${class_name}::_register_methods()
+    {
+        // Register methods
+        register_method((char*)"_ready", &${class_name}::_ready);
+        register_method((char*)"_process", &${class_name}::_process);
+        
+        // Register properties
+        // register_property((char*)"category/float_var", &${class_name}::float_var, 0.0f);
+    }
+
+    void ${class_name}::_ready() 
+    {
+
+    }
+
+    void ${class_name}::_process() 
+    {
+
+    }
+}
+

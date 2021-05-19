@@ -1,0 +1,22 @@
+[general]
+
+singleton=false
+load_once=true
+symbol_prefix="${lower_project_name}_"
+reloadable=false
+
+[entry]
+
+Windows.64="res://${lower_project_name}/bin/win64/lib${lower_project_name}.dll"
+Windows.32="res://${lower_project_name}/bin/win32/lib${lower_project_name}.dll"
+X11.64="res://${lower_project_name}/bin/linux64/lib${lower_project_name}.so"
+X11.32="res://${lower_project_name}/bin/linux32/lib${lower_project_name}.so"
+HTML5.wasm32="res://${lower_project_name}/bin/wasm32/${lower_project_name}.wasm"
+
+[dependencies]
+
+Windows.64=[  ]
+Windows.32=[  ]
+X11.64=[  ]
+X11.32=[  ]
+HTML5.wasm32=[  ]

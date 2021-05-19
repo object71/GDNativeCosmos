@@ -1,0 +1,14 @@
+#ifndef ${upper_project_name}_${upper_class_name}_GEN_H
+#define ${upper_project_name}_${upper_class_name}_GEN_H
+
+#define CLASS_${upper_class_name}_START class ${class_name} : public ${parent_name}\
+{\
+private:\
+    GODOT_CLASS(${class_name}, ${parent_name})\
+public:\
+    void _init() {};
+
+
+#define CLASS_${upper_class_name}_END };
+
+#endif //${upper_project_name}_${upper_class_name}_GEN_H

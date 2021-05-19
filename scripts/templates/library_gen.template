@@ -1,0 +1,8 @@
+#ifndef ${upper_project_name}_LIBRARY_GEN_H
+#define ${upper_project_name}_LIBRARY_GEN_H
+
+#define ${upper_project_name}_CLASS_REGISTRATION ${commands}
+
+${includes}
+
+#endif //${upper_project_name}_LIBRARY_GEN_H
