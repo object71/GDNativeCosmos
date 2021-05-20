@@ -3,8 +3,8 @@ project(cosmos)
 
 include(GenerateGDNativeInterface)
 
-file(GLOB_RECURSE SOURCES src/*.c**)
-file(GLOB_RECURSE HEADERS include/*.h**)
+file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c**")
+file(GLOB_RECURSE HEADERS CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/include/*.h**")
 
 if(EMSCRIPTEN)
     add_global_compile_flag("-s ASSERTIONS=1")

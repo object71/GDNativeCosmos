@@ -27,7 +27,11 @@ namespace godot
 
     void Player::_process() 
     {
-
+        Vector2 current_position = get_global_position();
+        float move_value = 100;
+        current_position.x += move_value;
+        current_position.y += move_value;
+        set_global_position(current_position);
     }
 }
 

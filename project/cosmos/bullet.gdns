@@ -3,6 +3,6 @@
 [ext_resource path="res://cosmos/cosmos_native.gdnlib" type="GDNativeLibrary" id=1]
 
 [resource]
-resource_name = "Bullet"
+resource_name = "bullet"
 class_name = "Bullet"
 library = ExtResource( 1 )
