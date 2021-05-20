@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="cosmos" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="--path &quot;$ProjectFileDir$/project&quot;" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Cosmos" TARGET_NAME="cosmos" CONFIG_NAME="Debug-x32" RUN_PATH="$PROJECT_DIR$/godot/Godot_v3.3.1-stable_win64.exe">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>
