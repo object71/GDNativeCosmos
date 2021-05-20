@@ -9,8 +9,8 @@ Create repository from this template. Then rename the cosmos project. Run cmake 
 To build for web you would have to go into the emsdk folder and run:
 
 ```
-./emsdk install latest
-./emsdk activate latest
+./emsdk install "2.0.17"
+./emsdk activate "2.0.17"
 ```
 
 Also when configuring with CMake make sure to add both ```-DCMAKE_TOOLCHAIN_FILE=./emsdk/upstream/emscripten/cmake/Platform/Emscripten.cmake``` and ```-G Ninja```

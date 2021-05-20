@@ -7,10 +7,7 @@ file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c
 file(GLOB_RECURSE HEADERS CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/include/*.h**")
 
 if(EMSCRIPTEN)
-    add_global_compile_flag("-s ASSERTIONS=1")
-    add_global_compile_flag("-s SIDE_MODULE=1")
     set(CMAKE_EXECUTABLE_SUFFIX ".wasm")
-    
     add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
 else()
     add_library(${PROJECT_NAME} SHARED ${SOURCES} ${HEADERS})
