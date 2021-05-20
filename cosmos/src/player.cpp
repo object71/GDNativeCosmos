@@ -1,15 +1,16 @@
 #include <player.h>
+#include <Engine.hpp>
 
 namespace godot
 {
-    Player::Player() 
+    Player::Player()
     {
     }
-
-    Player::~Player() 
+    
+    Player::~Player()
     {
     }
-
+    
     void Player::_register_methods()
     {
         // Register methods
@@ -19,14 +20,19 @@ namespace godot
         // Register properties
         // register_property((char*)"category/float_var", &Player::float_var, 0.0f);
     }
-
-    void Player::_ready() 
+    
+    void Player::_ready()
     {
-
     }
-
-    void Player::_process() 
+    
+    void Player::_process()
     {
+        
+        if (Engine::get_singleton()->is_editor_hint())
+        {
+            return;
+        }
+        
         Vector2 current_position = get_global_position();
         float move_value = 100;
         current_position.x += move_value;
