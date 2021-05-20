@@ -1,0 +1,22 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "name": "Cosmos Editor",
+      "type": "dll",
+      "exe": "${workspaceRoot}/godot/Godot_v3.3.1-stable_win64.exe",
+      "project": "CMakeLists.txt",
+      "args": [ "-e", "--path", "${workspaceRoot}/project" ],
+      "projectTarget": ""
+    },
+    {
+      "name": "Cosmos",
+      "type": "dll",
+      "exe": "${workspaceRoot}/godot/Godot_v3.3.1-stable_win64.exe",
+      "project": "CMakeLists.txt",
+      "args": [ "--path", "${workspaceRoot}/project" ],
+      "projectTarget": ""
+    }
+  ]
+}
