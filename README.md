@@ -1,6 +1,8 @@
 # Project GDNative Cosmos
 Template for GDNative code-first approach project.
 
+<a href="https://www.buymeacoffee.com/object71" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
 ## How to use
 Create repository from this template. Then rename the cosmos project. Run cmake configuration and it will download godot for you in the godot folder. Also when you build you only need to specify your C++ class script in gdnative_scripts.ini under normal or tool depending how you want them registered. First time you create a new script it will generate all necessary files for you on build so no need to worry about that. After that you only need to care about the files under "include" and not the ones under "include/gen"
 
